@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Calculator">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="500.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="284.0" text="Principle:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tp" alignment="CENTER" prefHeight="45.0" prefWidth="149.0" promptText="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="284.0" text="Rate of Interest:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tr" alignment="CENTER" prefHeight="45.0" prefWidth="149.0" promptText="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="284.0" text="Time Period:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tt" alignment="CENTER" prefHeight="45.0" prefWidth="149.0" promptText="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="284.0" text="Time Period:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lOutput" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="149.0" text="0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="calSI" alignment="CENTER" mnemonicParsing="false" onAction="#simpleInterest" prefHeight="66.0" prefWidth="196.0" style="-fx-background-color: #2ac539;" text="CALCULATE INTEREST" textAlignment="CENTER" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#clear" prefHeight="66.0" prefWidth="196.0" style="-fx-background-color: red;" text="CLEAR">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
