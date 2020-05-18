@@ -101,6 +101,13 @@
                </children>
             </VBox>
          </center>
+         <top>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="512.0" style="-fx-background-color: #39ade5;" text="Simple Interest Calculator Demo" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </top>
       </BorderPane>
    </children>
 </AnchorPane>
