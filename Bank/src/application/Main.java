@@ -8,16 +8,23 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
 
-public class Main extends Application { //important to extend Main class with Application for using GUI.
+public class Main extends Application {
+	//important to extend Main class with Application for using GUI.
+	static Stage pstage;
 	@Override
 	public void start(Stage primaryStage) {   //compulsory to use this method after extending class "Application" 
+		pstage=primaryStage;
+		changeScene("SI GUI.fxml","Simple Interest Calculator");
+	}
+	
+	public void changeScene(String gui,String title) {
 		try {
-			Parent root=FXMLLoader.load(getClass().getResource("SI GUI.fxml"));//loading FXML file
+			Parent root=FXMLLoader.load(getClass().getResource(gui));//loading FXML file
 			Scene scene = new Scene(root,500,400);  //setting width and height of the window 
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm()); //loading CSS file if used
-			primaryStage.setScene(scene);  // scene=content inside window
-			primaryStage.setTitle("Simple Interest Calculator"); //Title of the window
-			primaryStage.show();  //Showing window to user
+			pstage.setScene(scene);  // scene=content inside window
+			pstage.setTitle(title); //Title of the window
+			pstage.show();  //Showing window to user
 		} catch(Exception e) {
 			e.printStackTrace();  //Printing Exception
 		}

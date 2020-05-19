@@ -33,4 +33,8 @@ public class Calculator {
 		tt.setText("");
 		lOutput.setText("0");
 	}
+	public void changeScene() {
+		Main m=new Main();
+		m.changeScene("Test.fxml", "Working");
+	}
 }

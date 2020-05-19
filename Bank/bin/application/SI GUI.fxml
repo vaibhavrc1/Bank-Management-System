@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Calculator">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Calculator">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="500.0">
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
-            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <VBox BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
@@ -95,6 +95,14 @@
                            <font>
                               <Font name="System Bold Italic" size="18.0" />
                            </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button alignment="CENTER" layoutX="54.0" layoutY="16.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="66.0" prefWidth="196.0" style="-fx-background-color: orange;" text="Change Scene" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
                         </Button>
                      </children>
                   </HBox>
@@ -102,7 +110,7 @@
             </VBox>
          </center>
          <top>
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="512.0" style="-fx-background-color: #39ade5;" text="Simple Interest Calculator Demo" textFill="WHITE" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #39ade5;" text="Simple Interest Calculator Demo" textFill="WHITE" BorderPane.alignment="CENTER">
                <font>
                   <Font name="System Bold Italic" size="13.0" />
                </font>
