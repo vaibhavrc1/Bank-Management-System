@@ -34,7 +34,6 @@ public class Calculator {
 		lOutput.setText("0");
 	}
 	public void changeScene() {
-		Main m=new Main();
-		m.changeScene("Test.fxml", "Working",400,400);
+		new Main().changeScene("Test.fxml", "Working",400,400);
 	}
 }
