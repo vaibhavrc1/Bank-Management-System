@@ -35,6 +35,6 @@ public class Calculator {
 	}
 	public void changeScene() {
 		Main m=new Main();
-		m.changeScene("Test.fxml", "Working");
+		m.changeScene("Test.fxml", "Working",400,400);
 	}
 }

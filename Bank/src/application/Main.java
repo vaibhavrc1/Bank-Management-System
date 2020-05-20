@@ -14,13 +14,13 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {   //compulsory to use this method after extending class "Application" 
 		pstage=primaryStage;
-		changeScene("SI GUI.fxml","Simple Interest Calculator");
+		changeScene("SI GUI.fxml","Simple Interest Calculator",500,400);
 	}
 	
-	public void changeScene(String gui,String title) {
+	public void changeScene(String gui,String title,int width,int height) {
 		try {
 			Parent root=FXMLLoader.load(getClass().getResource(gui));//loading FXML file
-			Scene scene = new Scene(root,500,400);  //setting width and height of the window 
+			Scene scene = new Scene(root,width,height);  //setting width and height of the window 
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm()); //loading CSS file if used
 			pstage.setScene(scene);  // scene=content inside window
 			pstage.setTitle(title); //Title of the window
