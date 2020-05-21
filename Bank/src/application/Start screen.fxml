@@ -23,32 +23,46 @@
          <center>
             <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="170.0" prefWidth="339.0" BorderPane.alignment="CENTER">
                <children>
-                  <VBox alignment="CENTER" prefHeight="429.0" prefWidth="499.0">
+                  <VBox prefHeight="429.0" prefWidth="499.0">
                      <children>
+                        <Button mnemonicParsing="false" onAction="#about" opacity="0.84" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: silver; -fx-border-radius: 7; -fx-background-radius: 7;" text="About" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
                         <Label prefHeight="48.0" prefWidth="383.0" text="Bank Management" textFill="WHITE">
                            <font>
                               <Font name="System Bold Italic" size="32.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets left="40.0" top="80.0" />
+                           </VBox.margin>
                         </Label>
                         <Label layoutX="53.0" layoutY="188.0" prefHeight="46.0" prefWidth="383.0" text="Software" textFill="WHITE">
                            <font>
                               <Font name="System Bold Italic" size="32.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
                         </Label>
                         <Label prefHeight="66.0" prefWidth="468.0" text="This bank management software created by using Java, JavaFX as Graphical User Interface and MySQL as a database." textFill="WHITE" wrapText="true">
                            <font>
                               <Font name="System Bold Italic" size="14.0" />
                            </font>
-                           <padding>
+                           <VBox.margin>
                               <Insets left="40.0" />
-                           </padding>
+                           </VBox.margin>
                         </Label>
                      </children></VBox>
                   <VBox alignment="TOP_CENTER" prefHeight="429.0" prefWidth="326.0">
                      <children>
                         <VBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="295.0">
                            <children>
-                              <Button mnemonicParsing="false" opacity="0.84" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: black;" text="Sign in" textFill="WHITE">
+                              <Button mnemonicParsing="false" onAction="#signIn" opacity="0.84" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: black; -fx-border-color: silver; -fx-border-radius: 7; -fx-background-radius: 7;" text="Sign in" textFill="WHITE">
                                  <VBox.margin>
                                     <Insets right="15.0" />
                                  </VBox.margin>
@@ -65,7 +79,7 @@
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin></Label>
-                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="295.0">
+                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="295.0" style="-fx-background-radius: 7;">
                            <VBox.margin>
                               <Insets right="15.0" />
                            </VBox.margin></TextField>
@@ -74,7 +88,7 @@
                               <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="36.0">
+                        <TextField prefHeight="36.0" style="-fx-background-radius: 7;">
                            <VBox.margin>
                               <Insets right="15.0" />
                            </VBox.margin></TextField>
@@ -83,11 +97,11 @@
                               <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <PasswordField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="295.0">
+                        <PasswordField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="295.0" style="-fx-background-radius: 7;">
                            <VBox.margin>
                               <Insets right="15.0" />
                            </VBox.margin></PasswordField>
-                        <Button mnemonicParsing="false" onAction="#signUp" prefHeight="45.0" prefWidth="237.0" style="-fx-background-color: #14d01d;" text="Create New Account" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#signUp" prefHeight="45.0" prefWidth="237.0" style="-fx-background-color: #14d01d; -fx-background-radius: 7;" text="Create New Account" textFill="WHITE">
                            <VBox.margin>
                               <Insets top="30.0" />
                            </VBox.margin>
@@ -99,6 +113,16 @@
                   </VBox>
                </children>
             </HBox>
-         </center></BorderPane>
+         </center>
+         <bottom>
+            <Label fx:id="creators" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="17.0" prefWidth="791.0" text="Created by Vaibhav and Kartik" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </bottom></BorderPane>
    </children>
 </AnchorPane>

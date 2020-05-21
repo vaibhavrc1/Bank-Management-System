@@ -6,15 +6,27 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class StartScreen
 {
-
+	@FXML 
+	Label creators;
+	
 	public void signUp() {
 		new Main().changeScene("SignUpForm.fxml", "Sign Up", 600, 400);
+	}
+	
+	public void signIn() {
+		new Main().changeScene("SignIn.fxml", "Sign In", 711, 400);
+	}
+	
+	public void about() {
+		if(creators.getOpacity()==1)  creators.setOpacity(0);
+		else creators.setOpacity(1);
 	}
 
 }
