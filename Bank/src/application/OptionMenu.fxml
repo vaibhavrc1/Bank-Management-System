@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OptionMenu">
+   <children>
+      <SplitPane dividerPositions="0.75" layoutX="200.0" layoutY="-88.0" prefHeight="488.0" prefWidth="658.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="215.0">
+               <children>
+                  <TabPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #303030;" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Deposite">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="335.0" prefWidth="321.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label alignment="TOP_RIGHT" maxWidth="-Infinity" prefHeight="56.0" prefWidth="265.0" text="Deposit : Rs." textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="38.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="deposit" prefHeight="22.0" prefWidth="185.0" text="0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="30.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="BOTTOM_CENTER" prefHeight="130.0" prefWidth="538.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#dAdd100" prefHeight="53.0" prefWidth="53.0" style="-fx-background-color: #0004fc;" text="Rs.100" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd500" prefHeight="64.0" prefWidth="64.0" style="-fx-background-color: #00bbff;" text="Rs.500" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd1000" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #00fc2a;" text="Rs.1000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd2000" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: #fc8b00;" text="Rs.2000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="16.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd5000" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: #fc0000;" text="Rs.5000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#dAdd10000" prefHeight="115.0" prefWidth="115.0" style="-fx-background-color: #ba00ff;" text="Rs.10000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="20.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#dProceed" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #14d01d; -fx-background-radius: 7;" text="Proceed" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="28.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets right="20.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button layoutX="189.0" layoutY="30.0" mnemonicParsing="false" onAction="#reset" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #fc0000; -fx-background-radius: 7;" text="Reset" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="28.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="40.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Withdraw">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="335.0" prefWidth="321.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label alignment="TOP_RIGHT" maxWidth="-Infinity" prefHeight="56.0" prefWidth="265.0" text="Withdraw : Rs." textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="38.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="withdraw" prefHeight="22.0" prefWidth="185.0" text="0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="30.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="BOTTOM_CENTER" prefHeight="130.0" prefWidth="538.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#wAdd100" prefHeight="53.0" prefWidth="53.0" style="-fx-background-color: #0004fc;" text="Rs.100" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#wAdd500" prefHeight="64.0" prefWidth="64.0" style="-fx-background-color: #00bbff;" text="Rs.500" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#wAdd1000" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #00fc2a;" text="Rs.1000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#wAdd2000" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: #fc8b00;" text="Rs.2000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="16.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#wAdd5000" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: #fc0000;" text="Rs.5000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#wAdd10000" prefHeight="115.0" prefWidth="115.0" style="-fx-background-color: #ba00ff;" text="Rs.10000" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="7.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="20.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#wProceed" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #14d01d; -fx-background-radius: 7;" text="Proceed" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="28.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets right="20.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button layoutX="189.0" layoutY="30.0" mnemonicParsing="false" onAction="#reset" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #fc0000; -fx-background-radius: 7;" text="Reset" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="28.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="40.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content></Tab>
+                        <Tab text="Money Transfer">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutY="142.0" prefHeight="409.0" prefWidth="537.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="121.0" prefWidth="537.0">
+                                             <children>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="148.0" prefWidth="300.0">
+                                                   <children>
+                                                      <Label text="Enter Customer ID" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="32.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label text="Amount(Rupees)" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="32.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="92.0" prefWidth="207.0">
+                                                   <children>
+                                                      <TextField fx:id="tId" prefHeight="40.0" prefWidth="187.0">
+                                                         <VBox.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="tAmount" prefHeight="40.0" prefWidth="187.0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="98.0" prefWidth="537.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#transferMoney" prefHeight="60.0" prefWidth="326.0" style="-fx-background-color: #14d01d; -fx-background-radius: 7;" text="Transfer Money" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="28.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="25.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="14.0" layoutY="-12.0" prefHeight="149.0" prefWidth="537.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="98.0" prefWidth="466.0" text="Money Transfer" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold Italic" size="54.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Change Details">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="495.0" prefWidth="537.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="96.0" prefWidth="440.0" text="Change Details" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold Italic" size="43.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="100.0" prefWidth="154.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="65.0" text="First Name:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="fname">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="233.0" layoutY="10.0" prefHeight="100.0" prefWidth="154.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Middle Name:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="mname">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="100.0" prefWidth="154.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Last Name:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="lname">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+                                             <children>
+                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="86.0" prefWidth="231.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Phone Number:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="phoneno" prefHeight="25.0" prefWidth="215.0">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="86.0" prefWidth="231.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Email Address:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="email">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+                                             <children>
+                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="86.0" prefWidth="231.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Date of Birth:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <DatePicker fx:id="dob" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </DatePicker>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="86.0" prefWidth="231.0">
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Gender:" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ComboBox fx:id="gender" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Select your gender">
+                                                         <VBox.margin>
+                                                            <Insets left="7.0" right="7.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="79.0" prefWidth="537.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#update" prefHeight="56.0" prefWidth="205.0" style="-fx-background-color: #14d01d; -fx-background-radius: 7;" text="Update" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="20.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="175.0" style="-fx-background-color: #1c1c1c;">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <VBox prefHeight="433.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="176.0">
+                                 <children>
+                                    <Label text="Username:" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="username" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="176.0">
+                                 <children>
+                                    <Label text="User ID:" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="id" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="373.0" prefWidth="177.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="100.0" text="Current Balance" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="22.0" prefWidth="177.0">
+                                       <children>
+                                          <Label text="Rs." textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="balance" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </top>
+                     <bottom>
+                        <VBox alignment="CENTER" prefHeight="97.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#signOut" opacity="0.84" prefHeight="42.0" prefWidth="133.0" style="-fx-background-color: red; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
